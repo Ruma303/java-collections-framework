@@ -1,13 +1,11 @@
-package lessons.comparable;
+package lessons.collection.list;
 
 import java.util.Collections;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Comparator;
 
-public class Main {
+public class ArrayListClass {
 	public static void main(String[] args) {
-		List<Integer> numeri = new ArrayList<>();
+		List<Integer> numeri = new java.util.ArrayList<>();
 		numeri.add(5);
 		numeri.add(1);
 		numeri.add(10);
@@ -39,7 +37,7 @@ public class Main {
 		System.out.println("Lista mescolata: " + numeri);
 
 		// Copia di una lista in un'altra
-		List<Integer> dest = new ArrayList<>(Collections.nCopies(numeri.size(), 0));
+		List<Integer> dest = new java.util.ArrayList<>(Collections.nCopies(numeri.size(), 0));
 		Collections.copy(dest, numeri);
 		System.out.println("Lista copiata: " + dest);
 
